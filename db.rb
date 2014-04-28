@@ -37,6 +37,7 @@
     Rubyist.create(:name => 'Luc Juggery', :city => "Nashville, Tenessee")  
     Rubyist.create(:name => 'Sunil Kelkar', :city => "Pune, India")  
     Rubyist.create(:name => 'Adam Smith', :city => "San Fransisco, USA")  
+    
       
     participant = Rubyist.find(:first)  
     puts %{#{participant.name} stays in #{participant.city}}  
