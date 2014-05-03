@@ -1,0 +1,210 @@
+es:
+  show: 'Ver'
+  edit: 'Editar'
+  destroy: 'Eliminar'
+  back: 'Atras'
+  clone: 'Clonar'
+  are_you_sure: 'Esta usted seguro(a)?'
+  default: 'Por defecto'
+  devise:
+    failure:
+      already_authenticated: 'Ya esta autenticado(a)'
+      consumers_client:
+        unauthenticated: 'Sin autenticar'
+        invalid: 'Correo-E o Contraseña esta invalido'
+      user:
+        invalid: 'Correo-E o Contraseña esta invalido'
+  activerecord:
+    models:
+      client: 'Cliente'
+      public_carrier: 'Pasarela Externa'
+      client_cash: 'Cliente Banca'
+      client_cash_plan: 'Cliente Plan de fact.'
+      public_cash_plan: 'Plan de facturación'
+      freeswitch: 'Freeswitch'
+      users: 'Usuarixs'
+      consumers_request_cash: 'Petición de recarga'
+    attributes:
+      consumers_request_cash:
+        amount: 'Dinero'
+        note: 'Notas'
+      user:
+        email: 'Correo-E'
+        password: 'Contraseña'
+        password_confirmation: 'Contraseña Confirmación'
+        remember_me: 'Recordar'
+      freeswitch:
+        name: 'Nombre'
+        ip: 'IP'
+      client:
+        name: 'Nombre'
+        email: 'Correo-E'
+        password: 'Contraseña'
+        password_confirmation: 'Contraseña Confirmación'
+        sip_user: 'Usuarix SIP'
+        sip_pass: 'Contraseña SIP'
+        balance: 'Balance'
+        public_carrier_id: 'Pasarela Externa'
+        max_calls: 'Limite de Canales'
+        proxy_media: 'Proxy Media(RTP)'
+        bypass_media: 'Bypass Media(RTP)(Solo Señalización)'
+      client_cash:
+        client_id: 'Cliente'
+        amount: 'Dinero'
+      public_cash_plan:
+        public_carrier_id: 'Pasarela Externa'
+        expression: 'Regexp Freeswitch'
+        bill_rate: 'Facturación por unidad'
+        bill_minimum: 'Facturación minima (seg)'
+        bridge: 'Bridge'
+        name: 'Nombre'
+        note: 'Notas'
+      client_cash_plan:
+        client_id: 'Cliente'
+        public_carrier_id: 'Pasarela Externa'
+        expression: 'Regexp Freeswitch'
+        bill_rate: 'Facturación por unidad'
+        bill_minimum: 'Facturación minima'
+        bridge: 'Bridge'
+        name: 'Nombre'
+        note: 'Notas'
+      public_carrier:
+        freeswitch_id: 'Freeswitch'
+        name: 'Nombre'
+        sip_user: 'Usuario SIP'
+        sip_pass: 'Contraseña SIP'
+        authenticate: 'Autenticar?'
+        ip: 'IP'
+        port: 'Puerto'
+  menu:
+   quit: 'Salir'
+   users: 'Usuarixs'
+   freeswitch: 'Freeswitches'
+   public_carriers: 'Pasarela Externa'
+   public_cash_plans: 'Plan de facturación'
+   clients: 'Clientes'
+   client_cash: 'Clientes Banca'
+   dashboard: 'Estado Actual'
+   request_cash: 'Petición de recarga'
+   cdr: 'CDR'
+  public_carrier:
+    l:
+      freeswitch: 'Freeswitch'
+      name: 'Nombre'
+      sip_user: 'Usuario SIP'
+      sip_pass: 'Contraseña SIP'
+      authenticate: 'Autenticar?'
+      ip: 'IP'
+      port: 'Puerto'
+    index:
+      title: 'Listando pasarelas externas'
+    edit:
+      title: 'Editando pasarela externa'
+    new:
+      title: 'Nueva pasarela externa'
+  public_cash_plan:
+    l:
+      public_carrier: 'Pasarela Externa'
+      expression: 'Regexp Freeswitch'
+      bill_rate: 'Facturación por unidad'
+      bill_minimum: 'Facturación minima'
+      bridge: 'Bridge'
+      name: 'Nombre'
+      note: 'Notas'
+    index:
+      title: 'Planes de facturación'
+    new:
+      title: 'Nuevo plan de facturación'
+    edit:
+      title: 'Editando plan de facturación'
+    
+  client_cash:
+    l:
+      client: 'Cliente'
+      amount: 'Dinero'
+      approved: 'Aprobar'
+    index:
+      title: 'Banca de clientes'
+    request:
+      title: 'Peticiones de clientes'
+    new:
+      title: 'Nueva Banca de cliente'
+    edit:
+      title: 'Editando Banca de cliente'
+  client:
+    l:
+      name: 'Nombre'
+      sip_user: 'SIP usuarix'
+      sip_pass: 'SIP acceso'
+      public_carrier: 'Pasarela Externa'
+      balance: 'Balance'
+      total_amount: 'Historia total recargado'
+      email: 'Correo-E'
+      sip_server: 'SIP servidor'
+      max_calls: 'Limite de Canales'
+      proxy_media: 'Proxy Media(RTP)'
+      bypass_media: 'Bypass Media(RTP)(Solo Señalización)'
+      mode_media: 'Media'
+    new:
+      title: 'Nuevx cliente'
+    index:
+      title: 'Lista de clientes'
+  freeswitch:
+    l: 
+      name: 'Nombre'
+      ip: 'IP'
+    new:
+      title: 'Nuevo Freeswitch'
+    index:
+      title: 'Listando Freeswitches'
+    edit:
+      title: 'Editando Freeswitch'
+  user:
+    l:
+      sign_in: 'Ingresar'
+      sign_out: 'Salir'
+      sign_up: 'Registrar'
+    sign_in:
+      title: 'Ingresar'
+  dashboard:
+    index:
+      title: 'Estado Actual'
+  consumers_request_cash:
+    l:
+      client: 'Cliente'
+      amount: 'Dinero'
+      note: 'Notas'
+    index:
+      title: 'Lista de peticiones'
+    new:
+      title: 'Nueva Petición de recarga'
+    edit:
+      title: 'Editando Petición de recarga'
+  cdr:
+    l:
+      cdr_months: 'Detallado por mes'
+      cdr_days: 'Detallado diario del mes actual'
+      cdr_weeks: 'Detallado de las semanas del mes actual'
+    index:
+      title: 'Detallado de llamadas'
+  client_cash_plan:
+    l:
+      client: 'Cliente'
+      public_carrier: 'Pasarela Externa'
+      expression: 'Regexp Freeswitch'
+      bill_rate: 'Facturación por unidad'
+      bill_minimum: 'Facturación minima'
+      name: 'Nombre'
+      note: 'Notas'
+      bridge: 'Bridge'
+    new:
+      title: 'Nuevo plan personal'
+    index:
+      title: 'Plan de fact.'
+    edit:
+      title: 'Plan de fact.'
+  email:
+    balance_out_email:
+      subject: 'Sin balance'
+    balance_in_email:
+      subject: 'De nuevo con balance'

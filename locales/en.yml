@@ -1,0 +1,213 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  show: 'View'
+  edit: 'Edit'
+  destroy: 'Delete'
+  back : ' Back '
+  clone: ' Clone '
+  are_you_sure : ' Are you sure you ( a) ? '
+  default: 'Default'
+  devise :
+    failure:
+      already_authenticated : ' Now is authenticated ( a) '
+      consumers_client :
+        unauthenticated : 'Not be authenticated '
+        invalid : ' E-mail or password is invalid '
+      user:
+        invalid : ' E-mail or password is invalid '
+  activerecord :
+    models :
+      client: 'Client'
+      public_carrier: ' External Gateway '
+      client_cash : 'Client Banking '
+      client_cash_plan : 'Client Plan of fact. '
+      public_cash_plan: ' Billing Plan '
+      freeswitch: ' Freeswitch '
+      users: ' Usuarixs '
+      consumers_request_cash: ' Petition charging '
+    attributes:
+      consumers_request_cash :
+        amount: 'Money'
+        note : 'Notes'
+      user:
+        email: ' E-Mail '
+        password: 'Password'
+        password_confirmation: ' Password Confirmation '
+        remember_me : 'Remember '
+      freeswitch :
+        name: ' Name'
+        ip: ' IP '
+      client:
+        name: ' Name'
+        email: ' E-Mail '
+        password: 'Password'
+        password_confirmation: ' Password Confirmation '
+        sip_user: ' Usuarix SIP '
+        sip_pass: ' SIP password '
+        balance : ' Balance'
+        public_carrier_id: ' External Gateway '
+        max_calls : ' Narrow Channel '
+        proxy_media : 'Proxy Media (RTP ) '
+        bypass_media: ' Bypass Media (RTP ) ( signaling only) '
+      client_cash :
+        client_id : 'Client'
+        amount: 'Money'
+      public_cash_plan :
+        public_carrier_id: ' External Gateway '
+        expression: ' Regexp Freeswitch '
+        bill_rate: ' Billing Unit '
+        bill_minimum: ' Turnover minima ( s ) '
+        bridge: 'Bridge '
+        name: ' Name'
+        note : 'Notes'
+      client_cash_plan :
+        client_id : 'Client'
+        public_carrier_id: ' External Gateway '
+        expression: ' Regexp Freeswitch '
+        bill_rate: ' Billing Unit '
+        bill_minimum : ' Minimum Turnover '
+        bridge: 'Bridge '
+        name: ' Name'
+        note : 'Notes'
+      public_carrier :
+        freeswitch_id: ' Freeswitch '
+        name: ' Name'
+        sip_user: ' SIP User '
+        sip_pass: ' SIP password '
+        authenticate: ' Authenticate ? '
+        ip: ' IP '
+        port: ' Puerto '
+  menu:
+   quit: 'Exit'
+   users: ' Usuarixs '
+   freeswitch: ' Freeswitches '
+   public_carriers: ' External Gateway '
+   public_cash_plans: ' Billing Plan '
+   Customers: ' Customers '
+   client_cash: ' Banking Customers '
+   dashboard: ' Current Status '
+   request_cash: ' Petition charging '
+   cdr : ' CDR '
+  public_carrier :
+    l :
+      freeswitch: ' Freeswitch '
+      name: ' Name'
+      sip_user: ' SIP User '
+      sip_pass: ' SIP password '
+      authenticate: ' Authenticate ? '
+      ip: ' IP '
+      port: ' Port '
+    index:
+      title: ' I Displaying external gateways '
+    edit:
+      title: 'Editing external gateway '
+    new:
+      title: ' New external gateway '
+  public_cash_plan :
+    l :
+      public_carrier: ' External Gateway '
+      expression: ' Regexp Freeswitch '
+      bill_rate: ' Billing Unit '
+      bill_minimum : ' Minimum Turnover '
+      bridge: 'Bridge '
+      name: ' Name'
+      note : 'Notes'
+    index:
+      title: ' Billing Plans '
+    new:
+      title: 'New Billing Plan '
+    edit:
+      title: 'Editing billing plan '
+    
+  client_cash :
+    l :
+      client: 'Client'
+      amount: 'Money'
+      approved : 'Approve '
+    index:
+      title: ' Banking customers '
+    request:
+      title: ' Customer Request '
+    new:
+      title: ' New Banking Client '
+    edit:
+      title: 'Editing Client Banking '
+  client:
+    l :
+      name: ' Name'
+      sip_user: ' SIP usuarix '
+      sip_pass: ' SIP access '
+      public_carrier: ' External Gateway '
+      balance : ' Balance'
+      TOTAL_AMOUNT : ' Total History ornate '
+      email: ' E-Mail '
+      sip_server: ' SIP Server '
+      max_calls : ' Narrow Channel '
+      proxy_media : 'Proxy Media (RTP ) '
+      bypass_media: ' Bypass Media (RTP ) ( signaling only) '
+      mode_media : ' Media '
+    new:
+      title: ' Nuevx customer '
+    index:
+      title: ' Client List '
+  freeswitch :
+    l :
+      name: ' Name'
+      ip: ' IP '
+    new:
+      title: 'New Freeswitch '
+    index:
+      title: ' Displaying Freeswitches '
+    edit:
+      title: 'Editing Freeswitch '
+  user:
+    l :
+      sign_in : 'Log '
+      sign_out : 'Exit'
+      sign_up: ' Register'
+    sign_in :
+      title: 'Log '
+  dashboard :
+    index:
+      title: ' Current Status '
+  consumers_request_cash :
+    l :
+      client: 'Client'
+      amount: 'Money'
+      note : 'Notes'
+    index:
+      title: ' View Order '
+    new:
+      title: ' New Enquiry recharge '
+    edit:
+      title: 'Editing Request recharge '
+  cdr :
+    l :
+      cdr_months: 'I Detailed month '
+      cdr_days : ' Daily Detailed current month '
+      cdr_weeks : ' Detailed weeks of the current month '
+    index:
+      title: ' Call Detail '
+  client_cash_plan :
+    l :
+      client: 'Client'
+      public_carrier: ' External Gateway '
+      expression: ' Regexp Freeswitch '
+      bill_rate: ' Billing Unit '
+      bill_minimum : ' Minimum Turnover '
+      name: ' Name'
+      note : 'Notes'
+      bridge: 'Bridge '
+    new:
+      title: 'New personal plan '
+    index:
+      title: ' Plan of fact. '
+    edit:
+      title: ' Plan of fact. '
+  email:
+    balance_out_email :
+      subject: ' No balance '
+    balance_in_email :
+      subject: ' Again with balance '
