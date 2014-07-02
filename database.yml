@@ -4,7 +4,7 @@ development:
   database: mytest
   pool: 5
   username: root
-  password: bbs1101
+  password:  
 
 test: &test
   adapter: mysql
@@ -12,4 +12,4 @@ test: &test
   database: mytest
   pool: 5
   username: root
-  password: bbs1101
+  password:    
